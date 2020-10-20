@@ -8,6 +8,12 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr": "src/i18n/messages.fr.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -32,6 +38,9 @@
             "scripts": []
           },
           "configurations": {
+            "fr": {
+              "localize": ["fr"]
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -98,6 +107,9 @@
           "configurations": {
             "production": {
               "browserTarget": "frontend:build:production"
+            },
+            "fr": {
+              "browserTarget": "frontend:build:fr"
             },
             "rok": {
               "browserTarget": "frontend:build:rok"
