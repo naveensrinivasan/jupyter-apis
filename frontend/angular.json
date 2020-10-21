@@ -4,6 +4,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "frontend": {
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "fr" : "src/i18n/messages.fr.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/frontend",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -55,6 +61,9 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "fr":{
+              "localize" : ["fr"]
             },
             "rok": {
               "fileReplacements": [
@@ -98,6 +107,9 @@
           "configurations": {
             "production": {
               "browserTarget": "frontend:build:production"
+            },
+            "fr":{
+              "browserTarget": "frontend:build:fr"
             },
             "rok": {
               "browserTarget": "frontend:build:rok"
