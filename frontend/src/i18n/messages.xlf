@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
@@ -7,6 +7,48 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/main-table/resource-table/resource-table.component.html</context>
           <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1cd8dde44e20ce2fdd6fff20deeb2532524878c1" datatype="html">
+        <source>
+          <x id="START_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;fa-icon&gt;" />
+          <x id="CLOSE_TAG_FA-ICON" ctype="x-fa-icon" equiv-text="&lt;/fa-icon&gt;" />
+          CPU / RAM
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cpuRamDescription" datatype="html">
+        <source>
+    Specify the total amount of CPU and RAM reserved by your Notebook Server.
+    For CPU-intensive workloads, you can choose more than 1 CPU (e.g. 1.5).
+  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lblCPU" datatype="html">
+        <source>CPU</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="placHolderCpu" datatype="html">
+        <source># of CPU Cores</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="lblMemory" datatype="html">
+        <source>Memory</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.html</context>
+          <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
     </body>
