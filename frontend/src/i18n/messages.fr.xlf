@@ -64,6 +64,29 @@
           <context context-type="linenumber">25</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="18447639280265814" datatype="html">
+        <source>Specify number of CPUs</source>
+        <target>FR number of CPUs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8883036570810758249" datatype="html">
+        <source>Must be a number</source>
+        <source> FR Must be a number</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5339579025826969009" datatype="html">
+        <source> FR Specify at least <x id="PH"/> CPUs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/resource-form/form-specs/form-specs.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

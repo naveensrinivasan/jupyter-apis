@@ -46,6 +46,7 @@ export class FormSpecsComponent implements OnInit {
   @Input() parentForm: FormGroup;
   @Input() readonlyCPU: boolean;
   @Input() readonlyMemory: boolean;
+  meow = $localize`Specify number of CPUs`;
 
   ngOnInit() {
     this.parentForm
@@ -83,10 +84,11 @@ export class FormSpecsComponent implements OnInit {
   cpuErrorMessage(): string {
     let e: any;
     const errs = this.parentForm.get("cpu").errors || {};
-
-    if (errs.required) return "Specify number of CPUs";
-    if (errs.pattern) return "Must be a number";
-    if ((e = errs.min)) return `Specify at least ${e.min} CPUs`;
+    let errorNumber = $localize`@@errorNumber:Must be a number`;
+    let errorMinCpu = $localize`Specify at least ${e.min} CPUs`;
+    if (errs.required) return this.meow;
+    if (errs.pattern) return errorNumber;
+    if ((e = errs.min)) return errorMinCpu;
 
     if (this.parentForm.hasError("maxCpu")) {
       e = this.parentForm.errors.maxCpu;
