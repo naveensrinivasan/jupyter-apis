@@ -10,4 +10,15 @@
   <mat-slide-toggle formControlName="shm">
     {{ "formAdvancedOptions.toggleSharedMemory" | translate }}
   </mat-slide-toggle>
+  <h3>Settings for the environment variable</h3>
+  <p>This is to set the language inside the server. Kinda. It 
+    CANNOT be changed once the server is created. Choose carefully.</p>
+  <mat-form-field class="wide" appearance="outline">
+    <mat-label>Language du systeme</mat-label>
+    <mat-select matNativeControl formControlName="language">
+      <mat-option *ngFor="let v of languageList" [value]="v">
+        {{ v }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </div>

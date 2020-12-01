@@ -28,8 +28,9 @@ export function getFormDefaults(): FormGroup {
       extraFields: fb.group({}),
     }),
     datavols: fb.array([]),
-    shm: [true, []],
+    shm: [false, []],
     configurations: [[], []],
+    language: ['', [Validators.required]],
   });
 }
 

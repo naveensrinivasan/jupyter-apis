@@ -123,7 +123,7 @@ spawnerFormDefaults:
       vendor: ""
     readOnly: false
   shm:
-    value: true
+    value: false
     readOnly: false
   configurations:
     # List of labels to be selected, these are the labels from PodDefaults

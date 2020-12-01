@@ -23,6 +23,7 @@ import (
 const DefaultServiceAccountName string = "default-editor"
 const SharedMemoryVolumeName string = "dshm"
 const SharedMemoryVolumePath string = "/dev/shm"
+const EnvKFLanguage string = "KF_LANG"
 
 type volumetype string
 
@@ -61,6 +62,7 @@ type newnotebookrequest struct {
 	DataVolumes        []volumerequest   `json:"datavols"`
 	EnableSharedMemory bool              `json:"shm"`
 	Configurations     []string          `json:"configurations"`
+	Language		   string			 `json:"language"`
 }
 
 type notebookresponse struct {
@@ -470,6 +472,12 @@ func (s *server) NewNotebook(w http.ResponseWriter, r *http.Request) {
 			notebook.ObjectMeta.Labels[config] = "true"
 		}
 	}
+
+	//Add Language
+	notebook.Spec.Template.Spec.Containers[0].Env = append(notebook.Spec.Template.Spec.Containers[0].Env, corev1.EnvVar{
+		Name:      EnvKFLanguage,
+		Value:	   req.Language,
+	})
 
 	log.Printf("creating notebook %q for %q", notebook.ObjectMeta.Name, namespace)
 

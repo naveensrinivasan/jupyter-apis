@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { FormGroup } from "@angular/forms";
+import {TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: "app-form-advanced-options",
@@ -11,8 +12,18 @@ import { FormGroup } from "@angular/forms";
 })
 export class FormAdvancedOptionsComponent implements OnInit {
   @Input() parentForm: FormGroup;
+  //Get list from somewhere
+  languageList = ['fr','en'];
 
-  constructor() {}
+  private defaultLang = 'en';
+  constructor(private translate: TranslateService) {
+    const currentLanguage = this.translate.getBrowserLang();
+    this.defaultLang = (currentLanguage != undefined && currentLanguage.match(/en|fr/)) ? currentLanguage : "en";
+    
 
-  ngOnInit() {}
+  }
+
+  ngOnInit() {
+    this.parentForm.controls.language.setValue(this.defaultLang);
+  }
 }
