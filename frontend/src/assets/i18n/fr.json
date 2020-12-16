@@ -50,7 +50,10 @@
   "formAdvancedOptions": {
     "h3MiscSettings": "Paramètres divers",
     "txtMiscSettings": "Autres paramètres pouvant être appliqué au serveur bloc-notes.",
-    "toggleSharedMemory": "Activer la mémoire partagée"
+    "toggleSharedMemory": "Activer la mémoire partagée",
+    "h4SettingsEnvironmentVariable": "Paramètre pour la variable d'environement",
+    "txtSettingsEnvironmentVariable": "Ce paramètre est pour la langue interne du serveur bloc-notes. Il ne peut être changé une fois que la création terminée.",
+    "lblSystemLanguage":"Language du système"
   },
   "formConfiguration": {
     "h3Configuration": "Configurations",

@@ -1,24 +1,27 @@
 <div class="group-wrapper" [formGroup]="parentForm">
-  <h3>
+  <input id="collapsible" class="toggle-advanced-options" type="checkbox">
+  <label for="collapsible" class="lbl-toggle-advanced-options">
     <fa-icon [icon]="['fas', 'cogs']" class="check"></fa-icon>
     {{ "formAdvancedOptions.h3MiscSettings" | translate }}
-  </h3>
-  <p>
-    {{ "formAdvancedOptions.txtMiscSettings" | translate }}
-  </p>
-
-  <mat-slide-toggle formControlName="shm">
-    {{ "formAdvancedOptions.toggleSharedMemory" | translate }}
-  </mat-slide-toggle>
-  <h3>Settings for the environment variable</h3>
-  <p>This is to set the language inside the server. Kinda. It 
-    CANNOT be changed once the server is created. Choose carefully.</p>
-  <mat-form-field class="wide" appearance="outline">
-    <mat-label>Language du systeme</mat-label>
-    <mat-select matNativeControl formControlName="language">
-      <mat-option *ngFor="let v of languageList" [value]="v">
-        {{ v }}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
+  </label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>
+        {{ "formAdvancedOptions.txtMiscSettings" | translate }}
+      </p>
+      <mat-slide-toggle formControlName="shm">
+        {{ "formAdvancedOptions.toggleSharedMemory" | translate }}
+      </mat-slide-toggle>
+      <h4>{{ "formAdvancedOptions.h4SettingsEnvironmentVariable" | translate }}</h4>
+        <p>{{ "formAdvancedOptions.txtSettingsEnvironmentVariable" | translate }}</p>
+        <mat-form-field class="wide" appearance="outline">
+          <mat-label>{{ "formAdvancedOptions.lblSystemLanguage" | translate }}e</mat-label>
+          <mat-select matNativeControl formControlName="language">
+            <mat-option *ngFor="let v of languageList" [value]="v">
+              {{ v }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+  </div>
 </div>

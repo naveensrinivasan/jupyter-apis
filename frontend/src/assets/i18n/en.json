@@ -50,7 +50,10 @@
   "formAdvancedOptions": {
     "h3MiscSettings": "Miscellaneous Settings",
     "txtMiscSettings": "Other possible settings to be applied to the Notebook Server.",
-    "toggleSharedMemory": "Enable Shared Memory"
+    "toggleSharedMemory": "Enable Shared Memory",
+    "h4SettingsEnvironmentVariable": "Settings for the environment variable",
+    "txtSettingsEnvironmentVariable": "This is to set the language inside the server. It cannot be changed once the server is created. Choose carefully.",
+    "lblSystemLanguage":"System language"
   },
   "formConfiguration": {
     "h3Configuration": "Configurations",
