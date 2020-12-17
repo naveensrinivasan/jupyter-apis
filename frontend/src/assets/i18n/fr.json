@@ -53,7 +53,9 @@
     "toggleSharedMemory": "Activer la mémoire partagée",
     "h4SettingsEnvironmentVariable": "Paramètre de langue du serveur bloc-notes",
     "txtSettingsEnvironmentVariable": "Choisir la langue interne du serveur bloc-notes. La langue ne peut être changé une fois que la création terminée.",
-    "lblSystemLanguage":"Language du système"
+    "lblSystemLanguage":"Language du système",
+    "lblEnglish": "English",
+    "lblFrench": "Français"
   },
   "formConfiguration": {
     "h3Configuration": "Configurations",

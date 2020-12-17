@@ -12,10 +12,9 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class FormAdvancedOptionsComponent implements OnInit {
   @Input() parentForm: FormGroup;
-  //Get list from somewhere
   languageList = [
-    {'id':'en', 'label':'English'},
-    {'id':'fr', 'label':'Français'}    
+    {'id':'en', 'label':'formAdvancedOptions.lblEnglish'},
+    {'id':'fr', 'label':'formAdvancedOptions.lblFrench'}    
   ];
 
   private defaultLang = 'en';

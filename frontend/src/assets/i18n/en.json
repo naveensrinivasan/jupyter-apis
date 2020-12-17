@@ -53,7 +53,9 @@
     "toggleSharedMemory": "Enable Shared Memory",
     "h4SettingsEnvironmentVariable": "Server Language Settings",
     "txtSettingsEnvironmentVariable": "Set the language to be used inside the server. This cannot be changed once the server is created.",
-    "lblSystemLanguage":"System language"
+    "lblSystemLanguage":"System language",
+    "lblEnglish": "English",
+    "lblFrench": "Français"
   },
   "formConfiguration": {
     "h3Configuration": "Configurations",
