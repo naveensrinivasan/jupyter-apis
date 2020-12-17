@@ -13,14 +13,15 @@ import {TranslateService} from "@ngx-translate/core";
 export class FormAdvancedOptionsComponent implements OnInit {
   @Input() parentForm: FormGroup;
   //Get list from somewhere
-  languageList = ['fr','en'];
+  languageList = [
+    {'id':'en', 'label':'English'},
+    {'id':'fr', 'label':'Français'}    
+  ];
 
   private defaultLang = 'en';
   constructor(private translate: TranslateService) {
-    const currentLanguage = this.translate.getBrowserLang();
+    const currentLanguage = this.translate.getDefaultLang();
     this.defaultLang = (currentLanguage != undefined && currentLanguage.match(/en|fr/)) ? currentLanguage : "en";
-    
-
   }
 
   ngOnInit() {
