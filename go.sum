@@ -38,6 +38,7 @@ github.com/StatCan/kubeflow-controller v0.0.0-20200811133651-33215007413e h1:Gqr
 github.com/StatCan/kubeflow-controller v0.0.0-20200811133651-33215007413e/go.mod h1:A7WUXmGJel0QAkmkBg+HvheIbTEp+GvJAnUIvwKIMfQ=
 github.com/andanhm/go-prettytime v1.0.0 h1:4pweu5nz0fQrDjePi4/sJp/r60Vzt5M7hoj7GCfM8P0=
 github.com/andanhm/go-prettytime v1.0.0/go.mod h1:1JUUzhaE67n9bsj5Cx5Al4MVd0yft7NZgSA/qaRN408=
+github.com/andanhm/go-prettytime v1.1.0/go.mod h1:uizwLzwLZu1FTvSz8DSGkqm8Vc4edGa2VIMu16aoiZg=
 github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da/go.mod h1:Q73ZrmVTwzkszR9V5SSuryQ31EELlFMUz1kKyl939pY=
 github.com/armon/go-radix v0.0.0-20180808171621-7fddfc383310/go.mod h1:ufUuZ+zHj4x4TnLV4JWEpy2hxWSpsRywHrMgIH9cCH8=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
