@@ -6,7 +6,7 @@ require (
 	github.com/Azure/go-autorest/autorest v0.11.4 // indirect
 	github.com/Azure/go-autorest/autorest/adal v0.9.2 // indirect
 	github.com/StatCan/kubeflow-controller v0.0.0-20200811133651-33215007413e
-	github.com/andanhm/go-prettytime v1.0.0
+	github.com/andanhm/go-prettytime v1.1.0
 	github.com/golang/groupcache v0.0.0-20190129154638-5b532d6fd5ef // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
